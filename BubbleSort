@@ -1,0 +1,45 @@
+// Bubble sort
+
+class BubbleSort
+{
+    public static void main(String[] args) 
+    {
+        int a[]= {5,1,4,2,8};
+        
+        //PRINT ORIGINAL ARRAY
+        
+        System.out.print("original array : ");
+        
+        for(int i=0;i<a.length;i++)
+        {
+            System.out.print(a[i]+" ");
+        }
+         
+         //BUBBLE SORT LOGIC
+         
+        System.out.println();
+        System.out.print("Sorted array : ");
+        
+        //OUTER LOOP FOR TRAVERSE THE LOOP
+        
+        for(int i=0; i<a.length;i++)
+        {
+        
+           //INNER LOOP FOR COMPARISION
+           
+            for(int j=i+1;j<a.length-i;j++)
+            {
+                if(a[i]>a[j])
+                {
+                    int temp = a[i];
+                    a[i] = a[j];
+                    a[j] = temp;
+                    
+                }
+            }
+            //PRINT SORTED ARRAY
+            
+            System.out.print(a[i]+" ");
+        }
+    }
+}
